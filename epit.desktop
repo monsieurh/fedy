@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=elementary PIT
+GenericName=ePIT
+Icon=epit
+Comment=Software, Codec Installs & System Tweaks
+Exec=epit
+Terminal=false
+Type=Application
+Categories=System;Utility;
+Keywords=clean;codec;elementary;fix;install;proprietary;

@@ -8,14 +8,14 @@ const Notify = imports.gi.Notify;
 const Pango = imports.gi.Pango;
 const Lang = imports.lang;
 
-const APP_NAME = "Fedy";
+const APP_NAME = "ePIT";
 
 const Application = new Lang.Class({
     Name: APP_NAME,
 
     _init: function() {
         this.application = new Gtk.Application({
-            application_id: "org.folkswithhats.fedy",
+            application_id: "org.monsieurh.epit",
             flags: Gio.ApplicationFlags.FLAGS_NONE
         });
 
@@ -33,7 +33,7 @@ const Application = new Lang.Class({
             });
 
         try {
-            let icon = Gtk.IconTheme.get_default().load_icon("fedy", 48, 0);
+            let icon = Gtk.IconTheme.get_default().load_icon("epit", 48, 0);
 
             this._window.set_icon(icon);
         } catch (e) {
@@ -372,7 +372,7 @@ const Application = new Lang.Class({
                     const notification = new Notify.Notification({
                         summary: "Task " + (status === 0 ? "completed!" : "failed!"),
                         body: plugin.label + " (" + action.label + ") " + (status === 0 ? "successfully completed." : "failed."),
-                        icon_name: "fedy",
+                        icon_name: "epit",
                         id: this._hashString(plugin.category + plugin.label)
                     });
 
@@ -688,7 +688,7 @@ const Application = new Lang.Class({
         let system = this._loadPluginsFromDir(GLib.get_current_dir() + "/plugins");
 
         // User plugins
-        let user = this._loadPluginsFromDir(GLib.get_user_data_dir() + "/fedy/plugins");
+        let user = this._loadPluginsFromDir(GLib.get_user_data_dir() + "/epit/plugins");
 
         this._extendObject(this._plugins, system, user);
     },
@@ -700,7 +700,7 @@ const Application = new Lang.Class({
         let system = this._loadJSON(GLib.get_current_dir() + "/config.json");
 
         // User config
-        let user = this._loadJSON(GLib.get_user_data_dir() + "/fedy/config.json");
+        let user = this._loadJSON(GLib.get_user_data_dir() + "/epit/config.json");
 
         this._extendObject(this._config, system, user);
     }

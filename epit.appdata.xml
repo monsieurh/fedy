@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2015 Satyajit Sahoo <satyajit.happy@gmail.com> -->
+<application>
+    <id type="desktop">org.monsieurh.epit.desktop</id>
+    <licence>GFDL</licence>
+    <name>ePIT</name>
+    <summary>Install codecs, software, and more...</summary>
+    <description>
+        <p>
+        Elementary PIT lets you install multimedia codecs and additional software that
+        Fedora doesn't want to ship, like mp3 support, Adobe Flash, Oracle Java
+        etc., and much more with just a few clicks.
+        </p>
+    </description>
+    <!--<screenshots>-->
+        <!--<screenshot type="default" width="1360" height="765">http://folkswithhats.org/assets/fedy.png</screenshot>-->
+    <!--</screenshots>-->
+    <url type="homepage">https://github.com/monsieurh/elementaryPIT/</url>
+    <updatecontact>ray.hubert@riseup.net</updatecontact>
+</application>
