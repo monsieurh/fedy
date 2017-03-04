@@ -11,8 +11,10 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root dnf -y --setopt clean_requirements_on_remove=1 erase google-chrome-stable"
+			"command": "run-as-root apt remove -y google-chrome-stable"
 		},
-		"status": { "command": "rpm --quiet --query google-chrome-stable" }
+		"status": {
+			"command": "dpkg -s google-chrome-stable"
+		}
 	}
 }
