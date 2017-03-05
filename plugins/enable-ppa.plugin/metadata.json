@@ -1,0 +1,20 @@
+{
+	"icon": "settings",
+	"label": "Enable PPA",
+	"description": "Enable installation from third party sources.",
+	"license": "Free",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root apt install -y software-properties-common"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y software-properties-common"
+		},
+		"status": {
+			"command": "dpkg -s software-properties-common"
+		}
+	}
+}
