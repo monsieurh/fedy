@@ -1,8 +1,6 @@
 #!/bin/bash
 
-dnf config-manager --add-repo=http://negativo17.org/repos/fedora-steam.repo
-
-dnf -y install steam
-
-# Make "Big picture" mode work
-setsebool -P allow_execheap 1
+wget http://media.steampowered.com/client/installer/steam.deb
+apt-get install gdebi-core
+gdebi steam.deb
+rm steam.deb

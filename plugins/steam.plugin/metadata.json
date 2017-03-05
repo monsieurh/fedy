@@ -11,8 +11,10 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root -s uninstall.sh"
+			"command": "run-as-root apt remove -y steam"
 		},
-		"status": { "command": "rpm --quiet --query steam" }
+		"status": {
+			"command": "dpkg -s steam"
+		}
 	}
 }
