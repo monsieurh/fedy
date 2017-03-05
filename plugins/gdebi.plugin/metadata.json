@@ -1,0 +1,20 @@
+{
+	"icon": "settings",
+	"label": "Install GDebi",
+	"description": "Enable installation of .deb packages",
+	"license": "Free",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root apt install -y gdebi"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y gdebi"
+		},
+		"status": {
+			"command": "dpkg -s gdebi"
+		}
+	}
+}
