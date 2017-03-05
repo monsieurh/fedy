@@ -1,6 +1,6 @@
 ### Introduction
 
-Fedy lets you install multimedia codecs and additional software that Fedora [doesn't want to ship](http://fedoraproject.org/wiki/Forbidden_items?rd=ForbiddenItems), like mp3 support, Adobe Flash, Oracle Java etc., and much more with just a few clicks.
+elementaryOS Post Install Tool (ePIT for short) is a fork of [Fedy](http://folkswithhats.org/). It lets you install multimedia codecs and additional software that elementary OS doesn't ship, like Steam, Spotify, Google Chrome, and much more with just a few clicks.
 
 ### License
 
@@ -14,23 +14,23 @@ Copyright (C) [Satyajit Sahoo](mailto:satyajit.happy@gmail.com)
 
 ### Dependencies
 
-Fedy relies on `GTK+3` and `GJS` for it's UI layer.
+ePIT relies on `GTK+3` and `GJS` for it's UI layer.
 
 The included plugins rely on the following packages,
-* `dnf`
-* `dnf-plugins-core`
+* `apt`
+* `gjs`
 * `wget`
-* `rpmfusion-free-release`
-* `rpmfusion-nonfree-release`
-* `folkswithhats-release`
 
 ### Installation
 
-Fedy can be installed with our [script](http://folkswithhats.org/fedy-installer) which automatically sets up the repos and dependencies.
+ePIT can be installed with the following command :
+```bash
+curl https://raw.githubusercontent.com/monsieurh/elementaryPIT/master/installer.sh | sudo bash
+```
 
 ### Usage
 
-After installation, search for `Fedy` in the menu/overview or type `fedy` in the terminal.
+After installation, search for `ePIT` in the menu.
 
 ### Plugin structure
 
@@ -44,10 +44,10 @@ Have a look at the existing plugins to know more about how to write plugins for 
 
 ### Source code
 
-You can get the latest source code from the [github page](https://github.com/folkswithhats/fedy).
+You can get the latest source code from the [github page](https://github.com/monsieurh/elementaryPIT).
 
-`git clone https://github.com/folkswithhats/fedy`
+`git clone https://github.com/monsieurh/elementaryPIT`
 
 ### Bugs and feature requests
 
-Please submit bugs and feature requests [here](https://github.com/folkswithhats/fedy/issues). Pull requests are always welcome.
+Please submit bugs and feature requests [here](https://github.com/monsieurh/elementaryPIT/issues). Pull requests are always welcome.
