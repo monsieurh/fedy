@@ -11,7 +11,7 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root apt remove -y steam"
+			"command": "run-as-root apt purge -y steam"
 		},
 		"status": {
 			"command": "dpkg -s steam"
