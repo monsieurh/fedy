@@ -1,8 +1,10 @@
 {
 	"icon": "dropbox",
-	"label": "Dropbox for Nautilus",
-	"description": "Dropbox integration for the GNOME file manager.",
-	"license": [ "GPL", "CC-BY-ND-3" ],
+	"label": "Dropbox",
+	"description": "Cloud storage",
+	"license": [
+		"Proprietary"
+	],
 	"category": "Apps",
 	"scripts": {
 		"exec": {
@@ -11,8 +13,10 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root dnf -y --setopt clean_requirements_on_remove=1 erase nautilus-dropbox"
+			"command": "run-as-root apt purge dropbox -y"
 		},
-		"status": { "command": "rpm --quiet --query nautilus-dropbox" }
+		"status": {
+			"command": "dpkg -s dropbox"
+		}
 	}
 }

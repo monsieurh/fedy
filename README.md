@@ -38,7 +38,7 @@ The plugins can run any command or scripts (`bash`, `python` etc.). In addition 
 
 Have a look at the existing plugins to know more about how to write plugins for `Fedy`.
 
-### Source cod
+### Source code
 You can get the latest source code from the [github page](https://github.com/monsieurh/elementaryPIT).
 
 `git clone https://github.com/monsieurh/elementaryPIT`

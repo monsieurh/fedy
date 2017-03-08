@@ -1,3 +1,4 @@
+SHELL := /bin/bash
 # Install ePIT
 
 install-core:
