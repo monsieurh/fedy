@@ -1,0 +1,18 @@
+{
+	"icon": "synapse",
+	"label": "Synapse",
+	"license": "GNU GPL v3",
+	"description": "Quick application launcher",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root apt install -y synapse"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y synapse"
+		},
+		"status": { "command": "dpkg -s synapse" }
+	}
+}
