@@ -1,0 +1,20 @@
+{
+	"icon": "settings",
+	"label": "Open as root",
+	"description": "Add 'open as root' option to folder and text file context menus",
+	"license": "Free",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root rm /usr/share/contractor/open-folder-as-root.contract /usr/share/contractor/open-file-as-root.contract"
+		},
+		"status": {
+			"command": "[ -e /usr/share/contractor/open-folder-as-root.contract ] && [ -e /usr/share/contractor/open-file-as-root.contract ]"
+		}
+	}
+} 
