@@ -1,0 +1,20 @@
+{
+	"icon": "preferences-desktop-wallpaper",
+	"label": "Extra Wallpapers",
+	"description": "Additional wallpapers for your desktop",
+	"license": "Free",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root apt install -y elementary-wallpapers-extra"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y elementary-wallpapers-extra"
+		},
+		"status": {
+			"command": "dpkg -s elementary-wallpapers-extra"
+		}
+	}
+}
