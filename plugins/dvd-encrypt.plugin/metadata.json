@@ -1,0 +1,20 @@
+{
+	"icon": "media-dvd",
+	"label": "Read encrypted DVD",
+	"description": "Read copy protected DVDs",
+	"license": "Free",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y libdvd-pkg"
+		},
+		"status": {
+			"command": "dpkg -s libdvd-pkg"
+		}
+	}
+}
