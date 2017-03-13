@@ -1,5 +1,17 @@
 # Introduction
-elementaryOS Post Install Tool (ePIT for short) is a fork of [Fedy](http://folkswithhats.org/). It lets you install multimedia codecs and additional software that elementary OS doesn't ship, like Steam, Spotify, Google Chrome, and much more with just a few clicks.
+elementaryOS Post Install Tool (ePIT for short) is a fork of [Fedy](http://folkswithhats.org/).
+It helps you install multimedia codecs and various additional software that elementary OS doesn't ship, like Steam, Spotify, Google Chrome, and much more.
+
+# Goal
+## ePIT aims to :
+- Install any useful software that is missing in the AppCentre
+- Install any tweak we believe should be enabled by default
+- Install any software we believe should be installed by default
+
+## ePIT does not :
+- Replaces the elementary OS AppCentre
+- Install software that replace default elementary OS functionality 
+
 
 ## License
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
