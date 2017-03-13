@@ -7,14 +7,14 @@
 	"scripts": {
 		"exec": {
 			"label": "Install",
-			"command": "run-as-root apt install -y elementary-wallpapers-extra"
+			"command": "run-as-root -s install.sh"
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root apt purge -y elementary-wallpapers-extra"
+			"command": "run-as-root apt purge -y elementaryplus"
 		},
 		"status": {
-			"command": "dpkg -s elementary-wallpapers-extra"
+			"command": "dpkg -s elementaryplus"
 		}
 	}
 }
