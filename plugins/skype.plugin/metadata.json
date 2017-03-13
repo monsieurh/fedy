@@ -1,7 +1,7 @@
 {
 	"icon": "skype",
 	"label": "Skype",
-	"description": "Stay in touch with your family and friends for free on Skype.",
+	"description": "Text, video and audio chat.",
 	"license": "Adware",
 	"category": "Apps",
 	"scripts": {
@@ -11,8 +11,10 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root dnf -y --setopt clean_requirements_on_remove=1 erase skype"
+			"command": "run-as-root apt purge -y skypeforlinux"
 		},
-		"status": { "command": "rpm --quiet --query skype" }
+		"status": {
+			"command": "dpkg -s skypeforlinux"
+		}
 	}
 }
