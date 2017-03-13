@@ -1,0 +1,20 @@
+{
+	"icon": "file-roller",
+	"label": "Extract everything",
+	"description": "Extract from .rar .7z, .ace files.",
+	"license": "Free",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root apt install -y unace rar unrar p7zip-rar p7zip zip unzip sharutils uudeview mpack arj cabextract"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y unace rar unrar p7zip-rar p7zip zip unzip sharutils uudeview mpack arj cabextract"
+		},
+		"status": {
+			"command": "dpkg -s unace rar unrar p7zip-rar p7zip zip unzip sharutils uudeview mpack arj cabextract"
+		}
+	}
+}
