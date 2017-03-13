@@ -1,0 +1,20 @@
+{
+	"icon": "spotify",
+	"label": "Spotify",
+	"description": "A online illimited Music service",
+	"license": "Proprietary, Paid",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y spotify-client"
+		},
+		"status": {
+			"command": "dpkg -s spotify-client"
+		}
+	}
+}
