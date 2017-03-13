@@ -1,0 +1,20 @@
+{
+	"icon": "settings",
+	"label": "Video & Audio codecs",
+	"description": "Play MP3, MKV files natively.",
+	"license": "Free",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root apt -y install libavcodec-extra-53 gstreamer0.10-plugins-bad-multiverse"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y libavcodec-extra-53 gstreamer0.10-plugins-bad-multiverse"
+		},
+		"status": {
+			"command": "dpkg -s libavcodec-extra-53 && dpkg -s gstreamer0.10-plugins-bad-multiverse"
+		}
+	}
+}
