@@ -1,0 +1,20 @@
+{
+	"icon": "libreoffice",
+	"label": "Libreoffice",
+	"description": "A free office suite",
+	"license": "Apps",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root apt install -y libreoffice"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y libreoffice"
+		},
+		"status": {
+			"command": "dpkg -s libreoffice"
+		}
+	}
+}
