@@ -1,0 +1,20 @@
+{
+	"icon": "settings",
+	"label": "Install preload",
+	"description": "Preloads most used applications to speedup startup",
+	"license": "Free",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root apt install -y preload"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y preload"
+		},
+		"status": {
+			"command": "dpkg -s preload"
+		}
+	}
+}
