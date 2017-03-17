@@ -1,7 +1,7 @@
 {
 	"icon": "battery-full-charging",
-	"label": "Extra Wallpapers",
-	"description": "Additional wallpapers for your desktop",
+	"label": "Extra Icons",
+	"description": "Additional icons for all applications",
 	"license": "Free",
 	"category": "Utilities",
 	"scripts": {
