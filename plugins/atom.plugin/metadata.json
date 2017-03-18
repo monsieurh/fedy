@@ -11,7 +11,7 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root apt purge -y atom"
+			"command": "run-as-root ppa-purge -y ppa:webupd8team/atom"
 		},
 		"status": {
 			"command": "dpkg -s atom"

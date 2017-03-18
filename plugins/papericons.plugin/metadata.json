@@ -11,7 +11,7 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root apt purge -y paper-icon-theme"
+			"command": "run-as-root ppa-purge -y ppa:snwh/pulp"
 		},
 		"status": {
 			"command": "dpkg -s paper-icon-theme"

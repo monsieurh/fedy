@@ -11,7 +11,7 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root apt purge -y elementary-tweaks"
+			"command": "run-as-root ppa-purge -y ppa:philip.scott/elementary-tweaks"
 		},
 		"status": {
 			"command": "dpkg -s elementary-tweaks"
