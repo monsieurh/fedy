@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-sudo apt install fish -y
+apt install fish -y
 # install fisherman plugin manager
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
 # install ohmyfish

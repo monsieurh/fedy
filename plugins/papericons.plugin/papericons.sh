@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo add-apt-repository ppa:snwh/pulp
+add-apt-repository ppa:snwh/pulp
 # update repository info
-sudo apt-get update
+apt-get update
 # install icon theme
-sudo apt-get install paper-icon-theme
+apt-get install paper-icon-theme

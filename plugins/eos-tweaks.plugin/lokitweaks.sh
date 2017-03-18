@@ -1,4 +1,4 @@
 #!/bin/bash
-sudo add-apt-repository ppa:philip.scott/elementary-tweaks
-sudo apt-get update
-sudo apt-get install elementary-tweaks
+add-apt-repository ppa:philip.scott/elementary-tweaks
+apt-get update
+apt-get install elementary-tweaks

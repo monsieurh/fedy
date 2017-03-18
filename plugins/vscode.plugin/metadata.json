@@ -1,0 +1,22 @@
+{
+	"icon": "vscode",
+	"label": "Vscode",
+	"description": "Visual Studio Code",
+	"license": "Free",
+	"category": "Programming",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s vscode.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y code"
+		},
+		"status": {
+			"command": "dpkg -s code"
+		}
+	}
+}
+
+
