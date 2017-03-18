@@ -1,0 +1,22 @@
+{
+	"icon": "atom",
+	"label": "Atom",
+	"description": "Atom text editor",
+	"license": "Free",
+	"category": "Programming",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s atom.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y atom"
+		},
+		"status": {
+			"command": "dpkg -s atom"
+		}
+	}
+}
+
+

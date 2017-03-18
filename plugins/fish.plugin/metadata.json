@@ -1,0 +1,21 @@
+{
+	"icon": "fish",
+	"label": "Fish+Ohmyfish",
+	"description": "Fish shell + plugins",
+	"license": "Free",
+	"category": "Programming",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s fishsetup.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y fish"
+		},
+		"status": {
+			"command": "dpkg -s fish"
+		}
+	}
+}
+

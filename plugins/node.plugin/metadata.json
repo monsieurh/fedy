@@ -1,0 +1,22 @@
+{
+	"icon": "node",
+	"label": "Node v7",
+	"description": "Node version 7",
+	"license": "Free",
+	"category": "Programming",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s node7.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y nodejs"
+		},
+		"status": {
+			"command": "dpkg -s nodejs"
+		}
+	}
+}
+
+

@@ -1,0 +1,22 @@
+{
+	"icon": "neovim",
+	"label": "Neovim",
+	"description": "Neovim text editor + vimplug plugin manager",
+	"license": "Free",
+	"category": "Programming",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s neovim.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y neovim"
+		},
+		"status": {
+			"command": "dpkg -s neovim"
+		}
+	}
+}
+
+

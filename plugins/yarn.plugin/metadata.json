@@ -1,0 +1,22 @@
+{
+	"icon": "yarn",
+	"label": "Yarn",
+	"description": "Yarn node package manager",
+	"license": "Free",
+	"category": "Programming",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s yarn.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y yarn"
+		},
+		"status": {
+			"command": "dpkg -s yarn"
+		}
+	}
+}
+
+
