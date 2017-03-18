@@ -1,0 +1,22 @@
+{
+	"icon": "icons",
+	"label": "Paper icons",
+	"description": "Paper icon theme",
+	"license": "Free",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s papericons.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y paper-icon-theme"
+		},
+		"status": {
+			"command": "dpkg -s paper-icon-theme"
+		}
+	}
+}
+
+

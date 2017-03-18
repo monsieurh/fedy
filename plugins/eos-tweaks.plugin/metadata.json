@@ -1,0 +1,22 @@
+{
+	"icon": "elementary",
+	"label": "Elementary Tweaks",
+	"description": "elementaryOS Tweaks",
+	"license": "Free",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s lokitweaks.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y elementary-tweaks"
+		},
+		"status": {
+			"command": "dpkg -s elementary-tweaks"
+		}
+	}
+}
+
+
