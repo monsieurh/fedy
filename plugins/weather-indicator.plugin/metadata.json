@@ -1,0 +1,20 @@
+{
+	"icon": "my-weather-indicator",
+  "description": "A simple indicator for the weather",
+	"label": "my-weather-indicator",
+	"license": "Free",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y my-weather-indicator"
+		},
+		"status": {
+			"command": "dpkg -s my-weather-indicator"
+		}
+	}
+}
