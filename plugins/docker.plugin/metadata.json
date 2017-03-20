@@ -1,0 +1,22 @@
+{
+	"icon": "docker",
+	"label": "Docker+machine+compose",
+	"description": "Docker + docker-machine + docker-compose",
+	"license": "Free",
+	"category": "Programming",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s docker.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y docker-engine jq"
+		},
+		"status": {
+			"command": "dpkg -s docker-engine"
+		}
+	}
+}
+
+

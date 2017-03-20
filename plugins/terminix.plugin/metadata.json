@@ -1,0 +1,22 @@
+{
+	"icon": "terminal",
+	"label": "Terminix",
+	"description": "Terminix",
+	"license": "Free",
+	"category": "Programming",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s terminix.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y terminix"
+		},
+		"status": {
+			"command": "dpkg -s terminix"
+		}
+	}
+}
+
+

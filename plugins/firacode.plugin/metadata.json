@@ -1,0 +1,22 @@
+{
+	"icon": "font",
+	"label": "FiraCode",
+	"description": "FiraCode font with ligatures",
+	"license": "Free",
+	"category": "Programming",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s fira.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root rm ~/.fonts/FiraCode*"
+		}
+		// "status": {
+		// 	"command": "dpkg -s zsh"
+		// }
+	}
+}
+
+

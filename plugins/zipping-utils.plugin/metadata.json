@@ -1,0 +1,20 @@
+{
+	"icon": "zip",
+	"label": "Zipping Utils",
+	"description": "Zipping and unzipping utilities",
+	"license": "Free",
+	"category": "Programming",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root apt-get -y install zip unzip p7zip p7zip-rar rar unrar file-roller"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y zip unzip p7zip p7zip-rar rar unrar file-roller"
+		},
+		"status": {
+			"command": "dpkg -s file-roller"
+		}
+	}
+}

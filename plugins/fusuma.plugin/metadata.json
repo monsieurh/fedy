@@ -1,0 +1,20 @@
+{
+	"icon": "touchpad",
+	"label": "Fusuma",
+	"description": "Fusuma multitouch gestures",
+	"license": "Free",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s fusuma.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y libinput-tools xdotool ruby"
+		},
+		"status": {
+			"command": "dpkg -s fusuma"
+		}
+	}
+}

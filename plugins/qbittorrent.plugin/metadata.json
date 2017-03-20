@@ -1,0 +1,22 @@
+{
+	"icon": "qbittorrent",
+	"label": "Qbittorrent",
+	"description": "Qbittorrent torrent client",
+	"license": "Free",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root apt-get install -y qbittorrent"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y qbittorrent"
+		},
+		"status": {
+			"command": "dpkg -s qbittorrent"
+		}
+	}
+}
+
+
