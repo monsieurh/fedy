@@ -1,0 +1,20 @@
+{
+	"icon": "albert",
+  "description": "A fast, lightweight quick launcher for linux",
+	"label": "Albert",
+	"license": "Free",
+	"category": "Utilities",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt purge -y albert"
+		},
+		"status": {
+			"command": "dpkg -s albert"
+		}
+	}
+}
